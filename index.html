@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
   <title>Document</title>
 </head>
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;" backgroundimage="image1.jpg">
   <div style="text-align:center" id="calculator">
-    <h1>Calculator</h1>
+    <h1 style="color: white;"><b>Calculator</b></h1>
     <div>
       <input type="text" id="number1" placeholder="number1" required>
     </div>
@@ -16,9 +17,13 @@
       <input type="text" id="number2" placeholder="number2" required>
     </div>
     <div>
-      <button onclick="Addition()" id="subadd">submit</button>
-      <button onclick="multiplication()">submit</button>
+      <button onclick="Addition()" id="subadd">addtion</button>
+      <br>
+      <button onclick="multiplication()">multiplication</button>
+      <br>
       <button onclick="division()">division</button>
+      <br>
+      <button onclick="subtraction()">subtraction</button>
     </div>
     <div id="result">
     </div>

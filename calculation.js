@@ -15,10 +15,8 @@ const Addition=()=>{
     const number2=parseInt(document.getElementById("number2").value);
     result1=number1+number2;
     cal.innerHTML=`<h1>ADDITION:${result1}</h1>`;
-    cal.style.backgroundColor="red";
+    cal.style.backgroundColor="purple";
     cal.style.color="white";
-    cal.innerHTML+= "<h2>you have clicked</h2>"
-    cal.innerHTML+= "<h2>you have clicked</h2>"
 }
 
 const multiplication=function(){
@@ -27,7 +25,8 @@ const multiplication=function(){
     const number2=parseInt(document.getElementById("number2").value);
     result2=number1*number2;
     cal.innerHTML=`<h1>MULTIPLICATION:${result2}</h1>`;
-    cal.style.backgroundColor="yellow";
+    cal.style.backgroundColor="purple";
+    cal.style.color="white";
     
 }
 
@@ -50,9 +49,20 @@ function division(){
     const number1=parseInt(document.getElementById("number1").value);
     const number2=parseInt(document.getElementById("number2").value);
     result3=number1/number2
-    cal.innerHTML=`<h1>number is ${result3}</h1>`
+    cal.innerHTML=`<h1>DIVISION is ${result3}</h1>`
     cal.style.backgroundColor="purple"
-    cal.style.color="yellow"
+    cal.style.color="white"
+    
+}
+
+function subtraction(){
+    const cal=document.querySelector("#result");
+    const number1=parseInt(document.getElementById("number1").value);
+    const number2=parseInt(document.getElementById("number2").value);
+    result3=number1-number2
+    cal.innerHTML=`<h1>SUBTRACTION is ${result3}</h1>`
+    cal.style.backgroundColor="purple"
+    cal.style.color="white"
     
 }
 window.addEventListener("keyup",(e)=>{
